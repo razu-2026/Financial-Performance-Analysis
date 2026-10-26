@@ -68,18 +68,6 @@ Data preparation and validation were carried out **before** the financial calcul
 
 The updated Tableau data source is **`Actual_Transactions+ (Multiple Connections)`**. It contains **two fact tables** and **three shared dimensions** in Tableau's logical relationship layer.
 
-![Dual-fact Tableau data model](dual-fact-data-model.png)
-
-```mermaid
-flowchart LR
-    A[Actual_Transactions<br/>Actual fact] --- C[Calendar]
-    A --- D[Chart_of_Accounts]
-    A --- E[Departments]
-    B[Budget<br/>Budget fact] --- C
-    B --- D
-    B --- E
-```
-
 | Table | Role | Purpose |
 |---|---|---|
 | `Actual_Transactions` | Fact | Actual recorded financial transactions and amounts |
