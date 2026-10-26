@@ -67,6 +67,7 @@ Data preparation and validation were carried out **before** the financial calcul
 ## Data model architecture: dual-fact design
 
 The updated Tableau data source is **`Actual_Transactions+ (Multiple Connections)`**. It contains **two fact tables** and **three shared dimensions** in Tableau's logical relationship layer.
+![Dual-fact Tableau data model](dual-fact-data-model.png)
 
 | Table | Role | Purpose |
 |---|---|---|
